@@ -29,15 +29,15 @@ class AutoDetailVin(generics.RetrieveAPIView):
 
 
 #Представление для создания авто по характеристика Бренд и Модель
-# class CreateAuto(generics.CreateAPIView):
-#     queryset = CarTechCHar.objects.all()
-#     serializer_class = AutoCreateSerializer
+class CreateAuto(generics.CreateAPIView):
+    queryset = CarTechCHar.objects.all()
+    serializer_class = AutoCreateSerializer
 
 
 #Предаставление для создания авто с собственным написанием бренда
-class CreateAuto(generics.CreateAPIView):
-    queryset = CarBrand.objects.all()
-    serializer_class = AutoCreateSerializer
+# class CreateAuto(generics.CreateAPIView):
+#     queryset = CarBrand.objects.all()
+#     serializer_class = AutoCreateSerializer
 
     #Нужно как то создать серилизатор для модели и бренда и засунуть его в представление
 
