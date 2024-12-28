@@ -34,10 +34,12 @@ class AutoDetailVin(generics.RetrieveAPIView):
 #     serializer_class = AutoCreateSerializer
 
 
-#Предаставление для создания авто с собственным написанием бренда и модели
+#Предаставление для создания авто с собственным написанием бренда
 class CreateAuto(generics.CreateAPIView):
     queryset = CarBrand.objects.all()
     serializer_class = AutoCreateSerializer
+
+    #Нужно как то создать серилизатор для модели и бренда и засунуть его в представление
 
 
 
