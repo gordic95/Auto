@@ -137,3 +137,5 @@ SPECTACULAR_SETTINGS = {
     'VERSION': '1.0.0',                                           # Версия API
     'SERVE_INCLUDE_SCHEMA': False,                                # Отключение схемы в ответах API
 }
+
+

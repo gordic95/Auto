@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import CarTechCHar, CarBrand, CarModel
+from .models import CarTechCHar
 
 
 class AutoSerializer(serializers.ModelSerializer):
@@ -17,11 +17,3 @@ class AutoCreateSerializer(serializers.ModelSerializer):
         return CarTechCHar.objects.create(**validated_data)
 
 
-#Серилизатор для брендов
-# class AutoCreateSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = CarBrand
-#         fields = '__all__'
-#
-#     def create(self, validated_data):
-#         return CarBrand.objects.create(**validated_data)
